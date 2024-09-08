@@ -1,3 +1,4 @@
 # misc
 .env
 node_modules/
+business-details-form/public/config.js
