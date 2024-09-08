@@ -31,7 +31,7 @@ function App() {
         const accessToken = auth.access_token;
         console.log(serviceURL)
         console.log(accessToken)
-        const response = await axios.get(`${serviceURL}/api/businesses`,data, {
+        const response = await axios.post(`${serviceURL}/api/businesses`,data, {
           headers: {
             'Authorization': `Bearer ${accessToken}`
           }});
